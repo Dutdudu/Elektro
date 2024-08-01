@@ -16,10 +16,10 @@ const MenuHamb: React.FC<MenuHambProps> = ({ isOpen, toggleMenu }) => {
                         <img src={user} alt="user" />
                         <h3>Usuário</h3>
                     </InicioHamb>
-                    <Elemento>Editar dados</Elemento>
-                    <Elemento>Meus pedidos</Elemento>
-                    <Elemento>Meus produtos</Elemento>
-                    <Elemento>Meu carrinho</Elemento>
+                    <a href="/erro"><Elemento>Editar dados</Elemento></a>
+                    <a href="/erro"> <Elemento>Meus pedidos</Elemento></a>
+                    <a href="/erro"><Elemento>Meus produtos</Elemento></a>
+                    <a href="/erro"><Elemento>Meu carrinho</Elemento></a>
                     <SairElemento onClick={toggleMenu}>Sair</SairElemento>
                 </HambNav>
             )}

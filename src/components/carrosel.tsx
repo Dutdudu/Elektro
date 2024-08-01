@@ -1,37 +1,32 @@
 import React from 'react';
-import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { CarouselContainer, CarouselImage, Dot } from './carrosel.style';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/effect-fade';
+import { CarouselContainer, CarouselImage } from './carrosel.style';
+import { Pagination, Autoplay, EffectFade } from 'swiper/modules';
 
 interface CarrosselProps {
   images: string[];
 }
 
 const Carrossel: React.FC<CarrosselProps> = ({ images }) => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    adaptiveHeight: true,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    fade: true,
-    customPaging: (i: number) => <Dot />,
-  };
-
   return (
     <CarouselContainer>
-      <Slider {...settings}>
+      <Swiper
+        modules={[Pagination, Autoplay, EffectFade]}
+        pagination={{ clickable: true }}
+        autoplay={{ delay: 3000 }}
+        effect="fade"
+        speed={500}
+        loop={true}
+      >
         {images.map((image, index) => (
-          <div key={index}>
+          <SwiperSlide key={index}>
             <CarouselImage src={image} alt={`Slide ${index}`} />
-          </div>
+          </SwiperSlide>
         ))}
-      </Slider>
+      </Swiper>
     </CarouselContainer>
   );
 };

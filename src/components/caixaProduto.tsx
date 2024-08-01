@@ -15,7 +15,7 @@ function CaixaProduto({imagem, nome, preco}: PrivateProps){
     }
     return(
         <CaixaProd>
-            <img src={imagem} alt={nome} />
+            <a href="/erro2"><img src={imagem} alt={nome} /></a>
             <StatProd>
                 <InfoProd>
                     <Pe>{nome}</Pe>

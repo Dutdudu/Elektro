@@ -39,9 +39,10 @@ export const Elemento = styled.p`
     padding: 10px;
     cursor: pointer;
     border-bottom: 1px solid #ccc;
-
+    font-family: "Montserrat", sans-serif;
     &:hover {
         background-color: #ddd;
+
     }
 `;
 
@@ -51,6 +52,7 @@ export const SairElemento = styled.p`
     padding: 10px;
     cursor: pointer;
     margin-top: auto;
+    font-family: "Montserrat", sans-serif;
 
     &:hover {
         background-color: #ddd;

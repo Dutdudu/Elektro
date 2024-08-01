@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
     width: 100%;
-    
+    padding-left:15px;
    
     background-color: #2B2B2B;
     display: flex;
@@ -13,3 +13,4 @@ export const Nav = styled.nav`
     left: 0;
 
 `
+

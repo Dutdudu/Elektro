@@ -2,11 +2,11 @@ import { Nav } from "../../components/menu.style";
 import Menu from "../../components/menu";
 import HamburgerMenu from "../../components/hambmenu";
 import BarraSuperior from "../../components/barraSuperior";
-import { CompTitle, Title, CaTitle, Categorias, SubCat, Produto, Tela, CaTitle2, CaixaCaixa } from "./home.style";
+import { CompTitle, Title, CaTitle, Categorias, SubCat, Produto, Tela, CaTitle2, CaixaCaixa, Footer, IconesSeguidos, A, P } from "./home.style";
 import CaixaProduto from "../../components/caixaProduto";
 import ImageCarousel from "../../components/carrosel";
 import carro1 from '../../assets/carro1.png';
-import carro2 from '../../assets/carro3.png';
+import carro2 from '../../assets/carro2.png';
 import carro3 from '../../assets/carro3.png';
 /*const carro1 = require('../../assets/carro1.png');
 const carro2 = require('../../assets/carro2.png');
@@ -36,38 +36,38 @@ function Home(){
         <Categorias>
             <SubCat>
                 <Produto>
-                    <img src={require('../../assets/fotocirc1.png')} alt="Celulares" />
-                    <p> Celulares</p>
+                <A href="/erro2"> <img src={require('../../assets/fotocirc1.png')} alt="Celulares" /></A>   
+                    <P> Celulares</P>
                 </Produto>
                 <Produto>
-                    <img src={require('../../assets/fotocirc2.png')} alt="Notebooks" />
-                    <p> Notebooks</p>
+                <A href="/erro2"><img src={require('../../assets/fotocirc2.png')} alt="Notebooks" /></A>
+                    <P> Notebooks</P>
                 </Produto>
                 <Produto>
-                    <img src={require('../../assets/fotocirc3.png')} alt="Tablets" />
-                    <p> Tablets</p>
+                <A href="/erro2"> <img src={require('../../assets/fotocirc3.png')} alt="Tablets" /></A>
+                    <P> Tablets</P>
                 </Produto>
                 <Produto>
-                    <img src={require('../../assets/fotocirc4.png')} alt="Periféricos" />
-                    <p> Periféricos</p>
+                <A href="/erro2"> <img src={require('../../assets/fotocirc4.png')} alt="Periféricos" /></A>
+                    <P> Periféricos</P>
                 </Produto>
             </SubCat>
             <SubCat>
                 <Produto>
-                    <img src={require('../../assets/fotocirc5.png')} alt="TVs" />
-                    <p> TVs</p>
+                    <A href="/erro2"><img src={require('../../assets/fotocirc5.png')} alt="TVs" /></A>
+                    <P> TVs</P>
                 </Produto>
                 <Produto>
-                    <img src={require('../../assets/fotocirc6.png')} alt="Acessórios" />
-                    <p> Acessórios</p>
+                <A href="/erro2"> <img src={require('../../assets/fotocirc6.png')} alt="Acessórios" /></A>
+                    <P> Acessórios</P>
                 </Produto>
                 <Produto>
-                    <img src={require('../../assets/fotocirc7.png')} alt="PCs" />
-                    <p> PCs</p>
+                <A href="/erro2"> <img src={require('../../assets/fotocirc7.png')} alt="PCs" /></A>
+                    <P> PCs</P>
                 </Produto>
                 <Produto>
-                    <img src={require('../../assets/fotocirc8.png')} alt="Smartwatches" />
-                    <p> Smartwatches</p>
+                <A href="/erro2"> <img src={require('../../assets/fotocirc8.png')} alt="Smartwatches" /></A>
+                    <P> Smartwatches</P>
                 </Produto>
             </SubCat>
         </Categorias>
@@ -93,6 +93,17 @@ function Home(){
             <CaixaProduto imagem= {fotoQuad5}  nome="Smartphone" preco="R$3200,00" ></CaixaProduto>
             <CaixaProduto imagem= {fotoQuad6}  nome="Smartwatch" preco="R$900,00" ></CaixaProduto>
         </CaixaCaixa>
+        <Footer>
+            <p>Siga-nos nas redes sociais!</p>
+            <IconesSeguidos>
+                <img src={require('../../assets/face.png')} alt="face" />
+                <img src={require('../../assets/insta.png')} alt="insta" />
+                <img src={require('../../assets/tiktok.png')} alt="tiktok" />
+                <img src={require('../../assets/tt.png')} alt="tt" />
+                <img src={require('../../assets/linkedin.png')} alt="linkedin" />
+            </IconesSeguidos>
+
+        </Footer>
         <Menu/>
         </Tela>
     )

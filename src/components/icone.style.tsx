@@ -16,10 +16,11 @@ export const Texto = styled.p`
     color: white;
     margin: 0;
     padding-top: 5px;
+    font-family: "Montserrat", sans-serif;
     
 `
 export const Img = styled.img`
     width: 24px;
-    padding-top:;
+   
    
 `

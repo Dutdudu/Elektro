@@ -38,11 +38,13 @@ export const Preco = styled.p`
     font-weight: 700;
     padding: 0px 5px 5px 5px;
     margin: 0;
+    font-family: "Montserrat", sans-serif;
 `
 
 export const Pe = styled.p`
     padding: 0px 5px 0px 5px;
     margin: 0;
+    font-family: "Montserrat", sans-serif;
     
 `
 

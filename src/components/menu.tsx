@@ -10,10 +10,10 @@ const Menu: React.FC = () => {
 
   return (
     <Nav>
-      <Icone image={casa} texto="Home" />
-      <Icone image={chat} texto="Chat" />
-      <Icone image={avisos} texto="Avisos" />
-      <Icone image={perfil} texto="Perfil" />
+      <a href='/'> <Icone image={casa} texto="Home" /></a>
+      <a href='/erro'><Icone image={chat} texto="Chat" /></a>
+      <a href='/erro'><Icone image={avisos} texto="Avisos" /></a>
+      <a href='/erro'><Icone image={perfil} texto="Perfil" /></a>
     </Nav>
   );
 };

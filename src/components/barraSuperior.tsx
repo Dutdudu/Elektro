@@ -18,7 +18,7 @@ const BarraSuperior: React.FC = () => {
             <BarraSup>
                 <FaBars size={30} color="#fff" onClick={toggleMenu} />
                 <img src={pesquisa} alt="pesquisa" />
-                <img src={carrinho} alt="carrinho" />
+                <a href="/erro"><img src={carrinho} alt="carrinho" /></a>
             </BarraSup>
             <MenuHamb isOpen={isMenuOpen} toggleMenu={toggleMenu} />
         </>
