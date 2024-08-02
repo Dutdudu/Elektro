@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Nav = styled.nav`
     width: 100%;
     padding-left:15px;
-   
+    z-index: 1000;
     background-color: #2B2B2B;
     display: flex;
     flex-direction: row;

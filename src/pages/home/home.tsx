@@ -8,6 +8,10 @@ import ImageCarousel from "../../components/carrosel";
 import carro1 from '../../assets/carro1.png';
 import carro2 from '../../assets/carro2.png';
 import carro3 from '../../assets/carro3.png';
+import Carousel from "../../components/carrossel2";
+import CarrosselProdutos from "../../components/carrossel2";
+import CarrosselProdutos2 from "../../components/carrossel3";
+import CarrosselProdutos3 from "../../components/carrossel4";
 /*const carro1 = require('../../assets/carro1.png');
 const carro2 = require('../../assets/carro2.png');
 const carro3 = require('../../assets/carro3.png');*/
@@ -74,25 +78,18 @@ function Home(){
         <CaTitle2>
             Para Você
         </CaTitle2>
-        <CaixaCaixa>
-            <CaixaProduto imagem= {fotoQuad1}  nome="Celular" preco="R$800,00" ></CaixaProduto>
-            <CaixaProduto imagem= {fotoQuad2}  nome="Capa" preco="R$20,00" ></CaixaProduto>
-        </CaixaCaixa>
+        <CarrosselProdutos/>
 
         <CaTitle2>
             Produtos em Destaque
         </CaTitle2>
-        <CaixaCaixa>
-            <CaixaProduto imagem= {fotoQuad3}  nome="Smart TV" preco="R$1400,00" ></CaixaProduto>
-            <CaixaProduto imagem= {fotoQuad4}  nome="Monitor" preco="R$750,00" ></CaixaProduto>
-        </CaixaCaixa>
+        
+        <CarrosselProdutos2/>
+        
         <CaTitle2>
             Mais Vendidos
         </CaTitle2>
-        <CaixaCaixa>
-            <CaixaProduto imagem= {fotoQuad5}  nome="Smartphone" preco="R$3200,00" ></CaixaProduto>
-            <CaixaProduto imagem= {fotoQuad6}  nome="Smartwatch" preco="R$900,00" ></CaixaProduto>
-        </CaixaCaixa>
+       <CarrosselProdutos3/>
         <Footer>
             <p>Siga-nos nas redes sociais!</p>
             <IconesSeguidos>

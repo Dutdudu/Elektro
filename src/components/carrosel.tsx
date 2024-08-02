@@ -12,6 +12,7 @@ interface CarrosselProps {
 
 const Carrossel: React.FC<CarrosselProps> = ({ images }) => {
   return (
+    
     <CarouselContainer>
       <Swiper
         modules={[Pagination, Autoplay, EffectFade]}

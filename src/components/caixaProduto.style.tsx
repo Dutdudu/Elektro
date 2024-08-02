@@ -12,9 +12,11 @@ export const CaixaProd = styled.div`
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 45%;
-    border-radius: 15px;
+    width: 70%;
     
+    
+    
+    border-radius: 15px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 
 `
@@ -39,6 +41,7 @@ export const Preco = styled.p`
     padding: 0px 5px 5px 5px;
     margin: 0;
     font-family: "Montserrat", sans-serif;
+    color: black;
 `
 
 export const Pe = styled.p`
@@ -46,5 +49,7 @@ export const Pe = styled.p`
     margin: 0;
     font-family: "Montserrat", sans-serif;
     
+    
 `
+
 

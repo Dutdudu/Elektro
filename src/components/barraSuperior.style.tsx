@@ -10,6 +10,7 @@ export const BarraSup = styled.div`
     height: 70px;
     border-radius: 0px 0px 15px 15px;
     position:fixed;
+    z-index: 1000;
 
 
 `
